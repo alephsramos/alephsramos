@@ -1,0 +1,29 @@
+/* Paleta de Cores */
+:root {
+    
+    /* Cores Primárias */
+    --color-primary: #;
+    --color-primary-light: #;
+    --color-primary-dark: #;
+
+    /* Cores Secundárias */
+    --color-secondary: #;
+    --color-secondary-light: #;
+    --color-secondary-dark: #;
+
+    /* Cores de Texto */
+    --color-text-primary: #;
+    --color-text-secondary: #;
+    --color-text-light: #;
+    --color-text-dark: #;
+
+    /* Cores de Fundo */
+    --color-background: #;
+    --color-background-light: #;
+    --color-background-dark: #;
+
+    /* Cores de Realce */
+    --color-accent: #;
+    --color-accent-light: #;
+    --color-accent-dark: #;
+}
