@@ -22,5 +22,4 @@ function loadIncludes(file) {
 document.addEventListener("DOMContentLoaded", function() {
     loadHTML('includes/header.html', 'header-placeholder');
     loadHTML('includes/footer.html', 'footer-placeholder');
-    loadIncludes('includes/includes.html');
 });
