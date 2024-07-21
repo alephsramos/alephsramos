@@ -5,16 +5,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let isResizing = false;
     const maxWidth = 150; // Defina a largura máxima que a barra lateral pode atingir
 
-    sidebar.addEventListener('mousedown', (e) => {
-        if (e.offsetX > sidebar.offsetWidth - 10) {
+    const startResizing = (e) => {
+        let clientX = e.clientX || e.touches[0].clientX;
+        if (clientX > sidebar.offsetWidth - 10) {
             isResizing = true;
             document.body.style.cursor = 'ew-resize';
         }
-    });
+    };
 
-    document.addEventListener('mousemove', (e) => {
+    const resizeSidebar = (e) => {
         if (isResizing) {
-            let newWidth = e.clientX;
+            let clientX = e.clientX || e.touches[0].clientX;
+            let newWidth = clientX;
             if (newWidth > 82 && newWidth <= maxWidth) {
                 sidebar.style.minWidth = newWidth + 'px';
                 if (newWidth >= 150) {
@@ -24,14 +26,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         }
-    });
+    };
 
-    document.addEventListener('mouseup', () => {
+    const stopResizing = () => {
         if (isResizing) {
             isResizing = false;
             document.body.style.cursor = 'default';
         }
-    });
+    };
+
+    sidebar.addEventListener('mousedown', startResizing);
+    sidebar.addEventListener('touchstart', startResizing);
+
+    document.addEventListener('mousemove', resizeSidebar);
+    document.addEventListener('touchmove', resizeSidebar);
+
+    document.addEventListener('mouseup', stopResizing);
+    document.addEventListener('touchend', stopResizing);
 
     openBtn.addEventListener('click', () => {
         sidebar.classList.toggle('open-sidebar');
