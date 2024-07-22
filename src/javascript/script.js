@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('sidebar');
     const openBtn = document.getElementById('open_btn');
-    const maxWidth = 150; // Defina a largura máxima que a barra lateral pode atingir
+    const maxWidth = 230; // Defina a largura máxima que a barra lateral pode atingir
 
     const startResizing = (e) => {
         let clientX = e.clientX || e.touches[0].clientX;
