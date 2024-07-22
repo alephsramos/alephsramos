@@ -196,7 +196,7 @@ main {
     
     .sobre-habilidade {
         border: 1px solid red;
-        font-size: 2rem;
+
         flex-wrap: wrap;
         flex-direction: column;
         overflow: hidden;
@@ -208,11 +208,13 @@ main {
 
     .sobre-habilidade h1:nth-child(1) {
         border: 1px solid red;
-        margin-bottom: -20px;
+        margin-bottom: 0px;
+        font-size: 4rem;
     }
     
     .sobre-habilidade h1:nth-child(2) {
             border: 1px solid red;
+            font-size: 4rem;
     }
     
     
