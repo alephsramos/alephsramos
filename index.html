@@ -1,183 +1,432 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="src/css/sobre-mim.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <title>Sidebar</title>
+    <meta name="description" content="">
+    <meta name="author" content="Aleph Ramos">
+    <meta name="keywords" content="">
+    <meta property="og:title" content="Título do Site">
+    <meta property="og:description" content="Descrição do site para Open Graph.">
+    <meta property="og:image" content="URL da imagem para Open Graph">
+    <meta property="og:url" content="URL do site">
+    <meta property="og:type" content="website">
+    
+    <!-- Links de estilos -->
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+    <link rel="stylesheet" href="assets/styles/section1/section1.css">   
+    <link rel="stylesheet" href="assets/styles/section3/section3.css">
+    <link rel="stylesheet" href="assets/styles/section4/section4.css">
+    <link rel="stylesheet" href="assets/styles/section6/section6.css">
+    <link rel="stylesheet" href="assets/styles/section7/section7.css"> 
+    <link rel="stylesheet" href="assets/styles/main/main-flex.css">
+
+    <!-- Link de script -->
+    <script src="assets/js/main.js" defer></script>
+    
+    <!-- Favicons -->
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon" href="">
+
+    <!-- Bibliotecas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>DesenvolverWeb | Aleph Ramos</title>
 </head>
 <body>
-    <nav id="sidebar" class="animate__animated animate__bounceInLeft">
-        <div id="sidebar_content">
-            <div id="user">
-                <img src="./src/images/logo-alephsramos-solo.svg" id="user_avatar" alt="Avatar">
-    
-                <p id="user_infos">
-                    <span class="item-description">
-                        Aleph Ramos
-                    </span>
-                    <span class="item-description">
-                        Desenvolvedor Web
-                    </span>
-                </p>
+
+    <main class="layout">
+        <section class="section-1">
+            <div class="websites-title">
+                <h4>Websites</h4>
+                <span id="num_websites">0</span>
             </div>
-    
-            <ul id="side_items">
-                <li class="side-item active">
-                    <a href="#">
-                        <i class="fa-regular fa-star"></i>
-                        <span class="item-description">
-                            Sobre mim
-                        </span>
-                    </a>
-                </li>
-    
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-display"></i>
-                        <span class="item-description">
-                           Projetos
-                        </span>
-                    </a>
-                </li>
-    
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-code"></i>
-                        <span class="item-description">
-                            Serviços
-                        </span>
-                    </a>
-                </li>
-    
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-crop"></i>
-                        <span class="item-description">
-                            Designs
-                        </span>
-                    </a>
-                </li>
+            <div class="websites-container">
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-hashtag"></i>
-                        <span class="item-description">
-                            Mídias sociais
-                        </span>
-                    </a>
-                </li>
+                <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="novametalica.com.br" target="_blank">
+                            <img src="assets/images/logo/logo-novametalica.ico" alt="logo-novametalica">
+                            <div class="favorito-icon">
+                                <i class="fa-solid fa-star" title="TOP SITE"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Nova Metálica</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-coins"></i>
-                        <span class="item-description">
-                            Planos
-                        </span>
-                    </a>
-                </li>
+               <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="eventos.pousadaleange.com.br" target="_blank">
+                            <img src="./assets/images/logo/logo-leange.svg" alt="logo-leange">
+                            <div class="favorito-icon">
+                                <i class="fa-solid fa-star" title="TOP SITE"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>LeAnge</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-phone"></i>
-                        <span class="item-description">
-                            Contato
-                        </span>
-                    </a>
-                </li>
+               <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="https://alephsramos.github.io/jujujuice/" target="_blank">
+                            <img src="./assets/images/logo/logo-jujuice.svg" alt="logo-jujuice">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Ju-Ju Juice</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                        </div>
+                    </div>
+                </div>
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-comments"></i>
-                        <span class="item-description">
-                            Enviar feedback
-                        </span>
-                    </a>
-                </li>
+               <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="https://alephsramos.github.io/lifegreen/" target="_blank">
+                            <img src="./assets/images/logo/logo-lifegreen.svg" alt="logo-lifegreen">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>LifeGreen</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                        </div>
+                    </div>
+                </div>
 
-            </ul>
-    
-            <button id="open_btn">
-                <i id="open_btn_icon" class="fa-solid fa-arrow-right"></i>
-            </button>
-        </div>
+               <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="https://alephsramos.github.io/thelastofus/" target="_blank">
+                            <img src="./assets/images/logo/logo-thelastofus.svg" alt="logo-thelastofus">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>The Last of Us</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                        </div>
+                    </div>
+                </div>
 
-        <div id="logout">
-            <button id="logout_btn">
-                <i class="fa-solid fa-user-group"></i>
-                <span class="item-description">
-                    Conversar agora
-                </span>
-            </button>
-        </div>
-    </nav>
+               <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="https://alephsramos.github.io/coffe/" target="_blank">
+                            <img src="./assets/images/logo/logo-coffee.svg" alt="logo-coffee">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Coffee</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
 
-    <main>
-        <div class="elementos-sobre-mim">
-            <div class="sobre-linguagens">
-                <i class="fa-brands fa-html5 animate__animated animate__backInLeft"></i>
-                <i class="fa-brands fa-css3-alt animate__animated animate__backInRight"></i>
-                <i class="fa-brands fa-js animate__animated animate__jackInTheBox"></i>
-                <i class="fa-brands fa-python animate__animated animate__backInLeft"></i>
-                <i class="fa-brands fa-react animate__animated animate__backInRight"></i>
+                <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="#">
+                            <img src="#" alt="imagem-projeto-logo">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Nome do projeto</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="#">
+                            <img src="#" alt="imagem-projeto-logo">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Nome do projeto</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="#">
+                            <img src="#" alt="imagem-projeto-logo">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Nome do projeto</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="#">
+                            <img src="#" alt="imagem-projeto-logo">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Nome do projeto</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="#">
+                            <img src="#" alt="imagem-projeto-logo">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Nome do projeto</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="websites-item" id="website_counter">
+                    <div class="websites-item-logo">
+                        <a href="#">
+                            <img src="#" alt="imagem-projeto-logo">
+                        </a>
+                    </div>
+                    <div class="websites-item-nome">
+                    <span>Nome do projeto</span>
+                    </div>
+                    <div class="websites-item-tec">
+                        <div class="websites-item-tec-span">
+                        <span>Linguagens</span>
+                        </div>
+                        <div class="websites-item-tec-icons">
+                    <i class="fa-brands fa-html5" title="HTML5"></i>
+                    <i class="fa-brands fa-css3-alt" title="CSS3"></i>
+                    <i class="fa-brands fa-js" title="JavaScript"></i>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="sobre-nome">
-                <p id="meu_nome">
-                    Olá, eu sou um &lt;b&gt; <b>desenvolvedor web</b> &lt;/b&gt freelancer
-                </p>
-            </div>
-            <div class="sobre-habilidade">
-                <h1 class="animate__animated animate__flipInY">Desenvolvedor</h1>
-                <h1 class="animate__animated animate__flipInX">& Designer</h1>
+        </section>
 
+        <section class="section-2">2</section>
+
+        <section class="section-3">
+            <div class="cv-title">
+                <h4>Currículo</h4>
             </div>
-            <div class="sobre-local">
-                <div class="local-1">
-                <p class="animate__animated animate__bounceInLeft">Miguel Pereira, RJ - Brasil</p>
-            </div><div class="local-2">
-                <h6 class="animate__animated animate__fadeInRight">Designer</h6>
-                <h6 class="animate__animated animate__fadeInRight">Social Media</h6>
-                <h6 class="animate__animated animate__fadeInRight">Desenvolvedor Web</h6>
-                <h6 class="animate__animated animate__fadeInRight">WebDesign</h6>
-            </div></div>
-            <div class="sobre-buttons">
-                <button class="sobre-button-1 animate__animated animate__zoomIn">Criar meu design</button>
-                <button class="sobre-button-2 animate__animated animate__zoomIn">Criar meu website</button>
-                <button class="sobre-button-3 animate__animated animate__zoomIn">Começar do zero</button>
-            </div>
-            <div class="sobre-sociais">
-                <a href="#" class="texto animate__animated animate__bounceInRight">
-                    @alephsramos | Todos os direitos reservados
-                </a>
-            
-                <div class="icones">
-                    <a href="#">
-                        <i class="fa-brands fa-square-instagram animate__animated animate__zoomIn"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin animate__animated animate__zoomIn"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-square-whatsapp animate__animated animate__zoomIn"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-square-envelope animate__animated animate__zoomIn"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-square-github animate__animated animate__zoomIn"></i>
-                    </a>
+            <div class="cv-container">
+                <div class="cv-container-div">
+                <div class="cv-left">
+                    <i class="fa-solid fa-file"></i>
+                </div>
+                <div class="cv-right">
+                    <a href="#" download="./assets/images/logo/logo-aleph.svg">Download</a>
+                </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="section-4">
+            <div class="designs-title">
+                <h4>Designs</h4>
+            </div>
+            <div class="designs-container-div">
+            <div class="designs-container">
+                <div class="designs-carousel">
+                    <div class="designs-carousel-images">
+                        <!-- Imagens do carrossel -->
+                        <img src="assets/images/designs/arraia.png" alt="Image 1">
+                        <img src="assets/images/designs/controle.png" alt="Image 2">
+                        <img src="assets/images/designs/hamburguer.png" alt="Image 3">
+                        <img src="assets/images/designs/helena.jpg" alt="Image 4">
+                        <img src="assets/images/designs/internet.png" alt="Image 5">
+                        <img src="assets/images/designs/pizza.png" alt="Image 6">
+                        <img src="assets/images/designs/racismo.png" alt="Image 7">
+                        <img src="assets/images/designs/sorvete.png" alt="Image 8">
+                        <!-- Duplicando as imagens para efeito infinito -->
+                        <img src="assets/images/designs/arraia.png" alt="Image 1">
+                        <img src="assets/images/designs/controle.png" alt="Image 2">
+                        <img src="assets/images/designs/hamburguer.png" alt="Image 3">
+                        <img src="assets/images/designs/helena.jpg" alt="Image 4">
+                        <img src="assets/images/designs/internet.png" alt="Image 5">
+                        <img src="assets/images/designs/pizza.png" alt="Image 6">
+                        <img src="assets/images/designs/racismo.png" alt="Image 7">
+                        <img src="assets/images/designs/sorvete.png" alt="Image 8">
+                    </div>
+                </div>
+            </div></div>
+            
+
+        </section>
+        <section class="section-5">5</section>
+
+        <section class="section-6">
+            <div class="certificados-title">
+                <h4>Certificados</h4>
+            </div>
+            <div class="certificados-div">
+            <div class="certificados-container">
+                <a href="https://example.com" target="_blank">
+                    <img src="assets/images/certificados/ansiedade.jpg" alt="certificado-1" loading="lazy">
+                    <img src="assets/images/certificados/artes-digitais.jpg" alt="certificado-2" loading="lazy">
+                    <img src="assets/images/certificados/automacao-de-sistemas.jpg" alt="certificado-3" loading="lazy">
+                    <img src="assets/images/certificados/futuro-sustentavel.jpg" alt="certificado-4" loading="lazy">
+                    <img src="assets/images/certificados/identidade-de-marca.jpg" alt="certificado-5" loading="lazy">
+                    <img src="assets/images/certificados/java-script.jpg" alt="certificado-1" loading="lazy">
+                    <img src="assets/images/certificados/jovens-no-trabalho.jpg" alt="certificado-2" loading="lazy">
+                    <img src="assets/images/certificados/lingua-inglesa.jpg" alt="certificado-3" loading="lazy">
+                    <img src="assets/images/certificados/net.jpg" alt="certificado-4" loading="lazy">
+                </a>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section-7">
+
+            <div class="formacao-title">
+                <h4>Formação</h4>
+            </div>
+            <div class="formacao-container">
+                <div class="formacao-item">
+                    <div class="formacao-item-left">
+                        <img src="./assets/images/logo/logo-ifrj.png" alt="logo-IFRJ">
+                    </div>
+                    <div class="formacao-item-center">
+                        <p>
+                            <b>Formação:</b> Ensino Médio Tecnico<br>
+                            <b>Instituição:</b> <a href="#">Instituto Federal do Rio de Janeiro - IFRJ/CEPF</a><br>
+                            <b>Curso:</b> <a href="#">Informática para Internet</a><br><br>
+                            <span><b>Ano:</b> 2021.1 - 2023.2</span>
+                        </p>
+                    </div>
+                    <div class="formacao-item-right">
+                        <div class="formacao-item-check">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formacao-item">
+                    <div class="formacao-item-left">
+                        <img src="./assets/images/logo/logo-uff.png" alt="logo-uff">
+                    </div>
+                    <div class="formacao-item-center">
+                        <p>
+                            <b>Formação:</b> Ensino Superior<br>
+                            <b>Instituição:</b> <a href="#">Universidade Federal Fluminense - UFF/CECIERJ</a><br>
+                            <b>Curso:</b> <a href="#">Sistemas de Computação</a><br><br>
+                            <span><b>Ano:</b> 2024.2 - 2027.2</span>
+                        </p>
+                    </div>
+                    <div class="formacao-item-right">
+                        <div class="formacao-item-check">
+                            <i class="fa-solid fa-lock formacao-incomplete"></i>
+                        </div>
+                    </div>
+                </div>
+
+            <div>
+
+        </section>
+
+        <section class="section-8">Navbar</section>
     </main>
-
-
-    <script src="src/javascript/script.js"></script>
 </body>
 </html>

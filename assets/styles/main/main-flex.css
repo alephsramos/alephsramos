@@ -1,0 +1,51 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) 10%;
+    grid-template-rows: repeat(6, 1fr);
+    height: 100vh;
+    gap: 20px; /* Aumenta a distância entre as seções */
+    width: 100%;
+    padding: 20px; /* Adiciona um espaçamento interno */
+}
+
+section{
+    border: 1px solid red;
+}
+
+.section-2 {
+    grid-column: 5 / span 3;
+    grid-row: 1 / span 4;
+    border-radius: 40px 20px 10px 15px;
+}
+
+.section-5 {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 4;
+    border-radius: 10px 20px 20px 50px;
+}
+
+/* Navbar Vertical */
+.section-8 {
+    grid-column: 13 / 14; /* Coloca a navbar na última coluna */
+    grid-row: 1 / span 6; /* Ocupa todas as linhas para 100% de altura */
+    border-radius: 30px;
+    background-color: #333;
+    color: #fff;
+    flex-direction: column; /* Coloca os itens na coluna */
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1em;
+    border: none; /* Remove a borda para a navbar */
+}
+
+.section-8 i {
+    font-size: 1.5em;
+    margin: 10px 0;
+    cursor: pointer;
+    color: #fff;
+    /* Adiciona efeito de hover para os ícones */
+}
+
+.section-8 i:hover {
+    color: #ffcc00;
+}
